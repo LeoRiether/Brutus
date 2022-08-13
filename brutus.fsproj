@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Random.fs" />
+    <Compile Include="Runner.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

@@ -41,8 +41,11 @@ let cprint =
             printfn "%s" s
             System.Console.ResetColor())
 
+type TestCaseIndex = int
 
-let run testCases generator progA progB =
+let run (testCases: int) (generator: TestCaseIndex -> string)
+        (progA: string) (progB: string) =
+
     let (execA, execB) = (exec progA, exec progB)
 
     let normalize (s : string) =

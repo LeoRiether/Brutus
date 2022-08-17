@@ -12,16 +12,6 @@ let generator (_ : int) =
         yield String.concat " " (Array.map (sprintf "%d") a)
     ]
 
-let _fibonacciGenerator (_: int) =
-    let n = gen 2 10
-    let a = Array.init n (fun _ -> gen 1 55)
-
-    String.concat "\n" [
-        yield "1"
-        yield sprintf "%d" n
-        yield String.concat " " (Array.map (sprintf "%d") a)
-    ]
-
 [<EntryPoint>]
 let main argv =
     let (progA, progB) = (argv.[0], argv.[1])
